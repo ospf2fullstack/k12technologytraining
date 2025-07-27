@@ -1,26 +1,136 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
 
 body {
-  background: #EEEEF4;
-  color:#999;
+  background: #FAD5DB;
+  color: #616264;
   font-family:Roboto;
+  margin: 0;
+  padding: 0;
 }
 
 h1{
   font-weight:100;
   font-size:27pt;
-  color:#E43;
+  color:#CF5D70;
+  margin-bottom: 30px;
 }
 
-p{font-weight:300;}
+h2{
+  font-weight:300;
+  font-size:18pt;
+  color:#CF5D70;
+  margin-bottom: 15px;
+}
+
+p{
+  font-weight:300;
+  line-height: 1.6;
+}
 
 .warning-content {
 	position:absolute;
-  top:25%;
+  top:15%;
   width:100%;
-  height:300px;
   text-align:center;
   margin:0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.logo img {
+  max-width: 120px;
+  /* max-height: 120px; */
+  width: auto;
+  height: auto;
+}
+
+.redirect-icon {
+  margin: 20px 0 30px 0;
+}
+
+.main-message {
+  font-size: 18px;
+  font-weight: 400;
+  color: #616264;
+  margin-bottom: 40px;
+}
+
+.new-site-info {
+  background: #EDBEC6;
+  border: 2px solid #CF5D70;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 600px;
+}
+
+.new-site-link {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 500;
+  color: #CF5D70;
+  text-decoration: none;
+  background: #FFFFFF;
+  padding: 15px 30px;
+  border-radius: 8px;
+  border: 2px solid #CF5D70;
+  transition: all 0.3s ease;
+}
+
+.new-site-link:hover {
+  background: #CF5D70;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.redirect-message {
+  font-size: 16px;
+  color: #616264;
+  margin: 30px 0;
+}
+
+#countdown {
+  font-weight: 600;
+  color: #CF5D70;
+  font-size: 18px;
+}
+
+.signature {
+  font-size: 14px;
+  color: #616264;
+  margin-top: 40px;
+}
+
+.signature a {
+  color: #CF5D70;
+  text-decoration: none;
+}
+
+.signature a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .warning-content {
+    top: 10%;
+    padding: 15px;
+  }
   
+  h1 {
+    font-size: 22pt;
+  }
   
+  .new-site-link {
+    font-size: 20px;
+    padding: 12px 25px;
+  }
+  
+  .new-site-info {
+    padding: 20px;
+    margin: 20px auto;
+  }
 }
